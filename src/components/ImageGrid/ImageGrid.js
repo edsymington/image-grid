@@ -96,7 +96,7 @@ const ImageGrid = props => {
             variants={listTransitions}
             initial="initial"
             animate="show"
-            className="grid sm:grid-cols-3 gap-1 sm:gap-2 md:gap-4 lg:gap-9"
+            className="grid sm:grid-cols-3 gap-4 sm:gap-2 md:gap-4 lg:gap-9"
         >
             {state.imageData.map((imageData, index) => (
                 <motion.li variants={listItemTransitions} key={index} className="aspect-w-1 aspect-h-1">

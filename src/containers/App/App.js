@@ -53,7 +53,7 @@ const App = props => {
   // Set up the tabs and image grid with a modal if required
   return (
     <>
-      <section className="container mx-auto px-2 md:px-4 mb-10">
+      <section className="container mx-auto sm:px-2 md:px-4 mb-10">
         <header>
           <Tabs activeCollection={state.collection} tabClickHandler={tabClickHandler} />
         </header>
