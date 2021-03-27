@@ -1,0 +1,15 @@
+.TabsNav li {
+    transform: translateY(-1px);
+}
+
+.TabsNav button {
+    font-family: 'Lato', sans-serif;
+}
+
+.ActiveTab {
+    @apply border-gray-500;
+}
+
+.ActiveTab button {
+    @apply text-gray-500;
+}

@@ -1,0 +1,16 @@
+{
+    "images": [
+        { 
+            "thumbnail-xs": "tagged-image1-xs.jpg",
+            "thumbnail-sm": "tagged-image1-sm.jpg",
+            "full": "tagged-image1.jpg",
+            "likes": 6
+        },
+        { 
+            "thumbnail-xs": "tagged-image2-xs.jpg",
+            "thumbnail-sm": "tagged-image2-sm.jpg",
+            "full": "tagged-image2.jpg",
+            "likes": 11
+        }
+    ] 
+  }
