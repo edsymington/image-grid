@@ -17,7 +17,7 @@ const ImageGrid = props => {
     
     // Set the initial state
     const [state, setState] = useState({
-        imageData: [],
+        imageData: null,
         errorLoadingData: false
     });
 
@@ -26,7 +26,7 @@ const ImageGrid = props => {
         
         // Reset the page
         setState({
-            images: [],
+            images: null,
             errorLoadingData: false
         });
 
@@ -42,16 +42,11 @@ const ImageGrid = props => {
         .catch(error => {
             // Show an error message
             setState({
-                imageData: [],
+                imageData: null,
                 errorLoadingData: true
             });
         });
     }, [props.collection]);
-
-    // No state yet
-    if(!state.imageData) {
-        return (<></>);
-    }
 
     // Error loading data
     if(state.errorLoadingData) {
@@ -61,8 +56,8 @@ const ImageGrid = props => {
     }
 
     // New data requested & page reset, DEVTODO: Add loading icon/message
-    if(!state.imageData.length) {
-        return (<></>);
+    if(!state.imageData) {
+        return null;
     }
 
     // Ready to go, set up the transitions
